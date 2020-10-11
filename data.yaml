@@ -1,76 +1,85 @@
 ---
 articles:
-- title: FitnessApp
-  description: Entwicklung einer Android-App zur Erfassung und der serverseitigen
-    Speicherung von Fitnessdaten
-  image: fitnessapp.png
-  site: left
-  actions:
-  - action: https://drive.google.com/uc?export=download&id=1CDtzXOv-P3GHqklQ0WkY2AHi4K7ch5iW
-    text: lesen
-    style: alt
-  - action: https://github.com/SimonHessel/Facharbeit
-    text: Code
-  rows:
-  - items:
-    - title: Technologien
-      items:
+  - title: FitnessApp
+    description:
+      Entwicklung einer Android-App zur Erfassung und der serverseitigen
+      Speicherung von Fitnessdaten
+    image: fitnessapp.png
+    site: left
+    actions:
+      - action: https://drive.google.com/uc?export=download&id=1CDtzXOv-P3GHqklQ0WkY2AHi4K7ch5iW
+        text: lesen
+        style: alt
+      - action: https://github.com/SimonHessel/Facharbeit
+        text: Code
+    rows:
+      - items:
+          - title: Technologien
+            items:
+              - Java (Android)
+              - PHP
+              - MYSQL
+          - title: Features
+            items:
+              - Makronährstoffzähler
+              - Fitnessplanerfassung
+              - grafische Fortschrittsüberprüfung
+  - title: VertretungsplanApp - intuitiver, schneller und übersichtlicher
+    image: vertretungsplanapp.jpg
+    site: right
+    actions:
+      - action: https://drive.google.com/uc?export=download&id=1wnmuRLL_egMNGm-Cg8Y3DudyoePsdsbO
+        text: lesen
+        style: alt
+    rows:
+      - items:
+          - title: Technologien
+            items:
+              - HTML/CSS
+              - JavaScript
+              - Python
+              - PHP
+              - MYSQL
+          - title: Features
+            items:
+              - Moodleauthentifizierung
+              - PDF-Scraper
+              - dynamischer Vertretungsplan
+              - Pushnotification
+      - items:
+          - title: Planung
+            items:
+              - NGINX
+              - NodeJS
+              - NEXTJS & React
+  - title: Data Center Network Architectures - Era of cloud computing
+    image: datacenter.png
+    site: right
+    actions:
+      - action: https://drive.google.com/uc?export=download&id=1sO5KCUG45JIhvZRXWDqWc2LqZKOVlv_z
+        text: lesen
+        style: alt
+    rows:
+      - items: []
+skills:
+  - category: Frontend
+    list:
       - Java (Android)
-      - PHP
-      - MYSQL
-    - title: Features
-      items:
-      - Makronährstoffzähler
-      - Fitnessplanerfassung
-      - grafische Fortschrittsüberprüfung
-- title: VertretungsplanApp - intuitiver, schneller und übersichtlicher
-  image: vertretungsplanapp.jpg
-  site: right
-  actions:
-  - action: https://drive.google.com/uc?export=download&id=1wnmuRLL_egMNGm-Cg8Y3DudyoePsdsbO
-    text: lesen
-    style: alt
-  rows:
-  - items:
-    - title: Technologien
-      items:
       - HTML/CSS
       - JavaScript
-      - Python
+  - category: Backend
+    list:
+      - Python (Flask)
+      - NodeJS
       - PHP
       - MYSQL
-    - title: Features
-      items:
-      - Moodleauthentifizierung
-      - PDF-Scraper
-      - dynamischer Vertretungsplan
-      - Pushnotification
-  - items:
-    - title: Planung
-      items:
-      - NGINX
-      - NodeJS
-      - NEXTJS & React
-skills:
-- category: Frontend
-  list:
-  - Java (Android)
-  - HTML/CSS
-  - JavaScript
-- category: Backend
-  list:
-  - Python (Flask)
-  - NodeJS
-  - PHP
-  - MYSQL
-  - MongoDB
-- category: DevOps
-  list:
-  - Git
-  - Kubernetes
-  - Helm
-- category: Sprachen
-  list:
-  - Französisch - Niveau B2
-  - Englisch - Niveau B1
-  - Spanisch - Niveau A2
+      - MongoDB
+  - category: DevOps
+    list:
+      - Git
+      - Kubernetes
+      - Helm
+  - category: Sprachen
+    list:
+      - Französisch - Niveau B2
+      - Englisch - Niveau B1
