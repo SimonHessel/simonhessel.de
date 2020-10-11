@@ -60,7 +60,20 @@ articles:
         text: lesen
         style: alt
     rows:
-      - items: []
+      - items:
+          - title: Architectures
+            items:
+              - Three-Tier
+              - Fat-Tree
+              - VL2
+              - Netlord
+          - title: Discussion
+            items:
+              - Agility
+              - Scalbility
+              - Costs
+              - Use cases
+
 skills:
   - category: Frontend
     list:
