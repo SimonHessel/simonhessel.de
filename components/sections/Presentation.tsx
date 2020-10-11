@@ -1,13 +1,13 @@
-import ArticleSection from '../tiles/Article';
-import BulletList from '../tiles/BulletList';
-import ActionRow from '../tiles/Button';
-import {Article} from '../../interfaces/Article';
+import ArticleSection from "../tiles/Article";
+import BulletList from "../tiles/BulletList";
+import ActionRow from "../tiles/Button";
+import { Article } from "../../interfaces/Article";
 
 type Props = {
   articles: Article[];
 };
 
-const Presentation = ({articles}: Props) => (
+const Presentation = ({ articles }: Props) => (
   <section id="one" className="wrapper style1">
     <div className="inner">
       {articles.map((item) => (
@@ -19,9 +19,7 @@ const Presentation = ({articles}: Props) => (
               ))}
             </div>
           ))}
-          <div className="row">
-            <ActionRow actions={item.actions} />
-          </div>
+          <ActionRow actions={item.actions} />
         </ArticleSection>
       ))}
     </div>
