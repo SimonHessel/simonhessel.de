@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import useTranslation from "../../hooks/useTranslation";
 
 type Props = {};
@@ -7,13 +8,29 @@ const Contact = ({}: Props) => {
   const { header, messagePlaceholder, sendBtn, resetBtn } = t<{
     [key: string]: string;
   }>("form");
+
+  const handleLogin = useCallback(async (event) => {
+    event.preventDefault();
+    const {
+      name: { value: name },
+      email: { value: email },
+      message: { value: message },
+    } = event.target.elements;
+    const link = `mailto:hessel.simon@gmail.com?body=${encodeURIComponent(
+      `${message}
+      
+      Regards ${name}
+      ${email}`
+    )}`;
+    window.open(link, "_blank");
+  }, []);
   return (
     <section id="four" className="wrapper style2 special">
       <div className="inner">
         <header className="major narrow">
           <h2 id="contactHeader">{header}</h2>
         </header>
-        <form id="contact" action="#" method="POST">
+        <form onSubmit={handleLogin}>
           <div className="container 75%">
             <div className="row uniform 50%">
               <div className="6u 12u$(xsmall)">
