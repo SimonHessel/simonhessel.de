@@ -4,7 +4,7 @@ import Main from "../components/Main";
 import { Data } from "../interfaces/Data";
 import loadData from "../utils/loadData";
 
-const language = "de";
+const language = "us";
 
 export const getStaticProps: GetStaticProps = async (): Promise<{
   props: Data;

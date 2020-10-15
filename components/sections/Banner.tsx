@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 type Props = {};
 
 const Banner = ({}: Props) => (
   <section id="banner">
-    <i className="icon fa-diamond"></i>
+    <i className="icon fa-code"></i>
     <h2>Willkommen</h2>
     <ul className="actions">
       <li>

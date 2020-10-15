@@ -8,7 +8,7 @@ articles:
     site: left
     actions:
       - action: https://drive.google.com/uc?export=download&id=1CDtzXOv-P3GHqklQ0WkY2AHi4K7ch5iW
-        text: lesen
+        text: Lesen
         style: alt
       - action: https://github.com/SimonHessel/Facharbeit
         text: Code
@@ -29,8 +29,13 @@ articles:
     site: right
     actions:
       - action: https://drive.google.com/uc?export=download&id=1wnmuRLL_egMNGm-Cg8Y3DudyoePsdsbO
-        text: lesen
+        text: Lesen
         style: alt
+      - action: https://github.com/SimonHessel/vertretungsplanapp/
+        text: Code
+      - action: https://simonhessel.github.io/vertretungsplanapp/
+        text: Demo
+
     rows:
       - items:
           - title: Technologien
@@ -73,7 +78,6 @@ articles:
               - Scalbility
               - Costs
               - Use cases
-
 skills:
   - category: Frontend
     list:
