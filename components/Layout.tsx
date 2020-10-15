@@ -7,7 +7,7 @@ type Props = {
   language: string;
 };
 
-const Layout = ({ children, title = "simonhessel.de", language }: Props) => (
+const Layout = ({ children, title = "simonhessel.de" }: Props) => (
   <div>
     <Head>
       <link rel="stylesheet" href="assets/css/main.css" />

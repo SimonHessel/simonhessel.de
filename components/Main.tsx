@@ -1,7 +1,5 @@
 import React from "react";
-import { Article } from "../interfaces/Article";
 import { Data } from "../interfaces/Data";
-import { Skill } from "../interfaces/Skill";
 import Layout from "./Layout";
 import Banner from "./sections/Banner";
 import Contact from "./sections/Contact";
