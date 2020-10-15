@@ -1,29 +1,26 @@
 ---
 articles:
-  - title: FitnessApp
-    description:
-      Entwicklung einer Android-App zur Erfassung und der serverseitigen
-      Speicherung von Fitnessdaten
-    image: fitnessapp.png
-    site: left
+  - title: Data Center Network Architectures - Era of cloud computing
+    image: datacenter.png
+    site: right
     actions:
-      - action: https://drive.google.com/uc?export=download&id=1CDtzXOv-P3GHqklQ0WkY2AHi4K7ch5iW
-        text: Lesen
+      - action: https://drive.google.com/uc?export=download&id=1sO5KCUG45JIhvZRXWDqWc2LqZKOVlv_z
+        text: lesen
         style: alt
-      - action: https://github.com/SimonHessel/Facharbeit
-        text: Code
     rows:
       - items:
-          - title: Technologien
+          - title: Architectures
             items:
-              - Java (Android)
-              - PHP
-              - MYSQL
-          - title: Features
+              - Three-Tier
+              - Fat-Tree
+              - VL2
+              - Netlord
+          - title: Discussion
             items:
-              - Makronährstoffzähler
-              - Fitnessplanerfassung
-              - grafische Fortschrittsüberprüfung
+              - Agility
+              - Scalbility
+              - Costs
+              - Use cases
   - title: VertretungsplanApp - intuitiver, schneller und übersichtlicher
     image: vertretungsplanapp.jpg
     site: right
@@ -57,27 +54,31 @@ articles:
               - NGINX
               - NodeJS
               - NEXTJS & React
-  - title: Data Center Network Architectures - Era of cloud computing
-    image: datacenter.png
-    site: right
+
+  - title: FitnessApp
+    description:
+      Entwicklung einer Android-App zur Erfassung und der serverseitigen
+      Speicherung von Fitnessdaten
+    image: fitnessapp.png
+    site: left
     actions:
-      - action: https://drive.google.com/uc?export=download&id=1sO5KCUG45JIhvZRXWDqWc2LqZKOVlv_z
-        text: lesen
+      - action: https://drive.google.com/uc?export=download&id=1CDtzXOv-P3GHqklQ0WkY2AHi4K7ch5iW
+        text: Lesen
         style: alt
+      - action: https://github.com/SimonHessel/Facharbeit
+        text: Code
     rows:
       - items:
-          - title: Architectures
+          - title: Technologien
             items:
-              - Three-Tier
-              - Fat-Tree
-              - VL2
-              - Netlord
-          - title: Discussion
+              - Java (Android)
+              - PHP
+              - MYSQL
+          - title: Features
             items:
-              - Agility
-              - Scalbility
-              - Costs
-              - Use cases
+              - Makronährstoffzähler
+              - Fitnessplanerfassung
+              - grafische Fortschrittsüberprüfung
 skills:
   - category: Frontend
     list:

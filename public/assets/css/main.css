@@ -2029,6 +2029,9 @@ header.narrow {
   header.major h2 {
     font-size: 2em;
   }
+  .feature .content .actions {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 736px) {
