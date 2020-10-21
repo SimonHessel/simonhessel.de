@@ -2,7 +2,7 @@ export default {
   common: {},
   hero: {
     header: "Welcome",
-    contactBtn: "conatact",
+    contactBtn: "contact",
     cvBtn: "Resume",
   },
   form: {

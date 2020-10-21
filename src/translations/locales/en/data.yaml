@@ -80,21 +80,30 @@ articles:
 skills:
   - category: Frontend
     list:
-      - Java (Android)
+      - React
+      - Angular
+      - Vanilla JS
       - HTML/CSS
-      - JavaScript
+      - Java (Android)
+
   - category: Backend
     list:
-      - Python (Flask)
+      - Golang
+      - C
+      - NESTJS
+      - NextJS
       - NodeJS
+      - Python
       - PHP
       - MYSQL
       - MongoDB
   - category: DevOps
     list:
       - Git
+      - Docker
       - Kubernetes
       - Helm
+      - AWS
   - category: Languages
     list:
       - German - native speaker
