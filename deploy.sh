@@ -9,3 +9,4 @@ touch .nojekyll
 git add .
 git commit -a -m "add"
 git push origin gh-pages
+git checkout master
