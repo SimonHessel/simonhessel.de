@@ -4018,13 +4018,18 @@ body.landing {
 /* Banner */
 #banner {
   padding: 8em 0 6em 0;
-  background-color: #1e2832;
   color: rgba(255, 255, 255, 0.75);
-  background-attachment: fixed;
-  background-image: url("images/overlay.png"),
-    url("https://images.pexels.com/photos/247791/pexels-photo-247791.png");
-  background-size: cover;
   text-align: center;
+}
+
+#banner-image {
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+  pointer-events: none;
+  background-color: #1e2832;
+  background-image: url("images/overlay.png");
+  background-size: cover;
 }
 
 #banner input,
