@@ -9,7 +9,14 @@ const Banner = (props: Props) => {
 
   return (
     <>
-      <Image id="banner-image" layout="fill" src="/images/hero.png" />
+      <div className="background-image">
+        <Image
+          alt="Hero Image"
+          id="banner-image"
+          layout="fill"
+          src="/static/images/hero.png"
+        />
+      </div>
       <section id="banner">
         <i className="icon fa-code"></i>
         <h2>{t("header")}</h2>

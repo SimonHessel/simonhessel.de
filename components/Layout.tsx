@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { ReactNode, useCallback } from "react";
+import { Footer } from "./sections/Footer";
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -13,7 +14,6 @@ const Layout = ({ children, title = "simonhessel.de" }: Props) => {
   return (
     <div>
       <Head>
-        <link rel="stylesheet" href="assets/css/main.css" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
@@ -21,6 +21,10 @@ const Layout = ({ children, title = "simonhessel.de" }: Props) => {
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Personal Home Page of Simon Hessel with a List of Projects and Skills."
+        />
       </Head>
 
       <header id="header" className="alt">
@@ -36,42 +40,7 @@ const Layout = ({ children, title = "simonhessel.de" }: Props) => {
       </header>
 
       {children}
-      <footer id="footer">
-        <div className="inner">
-          <ul className="icons">
-            <li>
-              <a
-                href="mailto:hessel.simon@gmail.com"
-                className="icon fa-envelope"
-              >
-                <span className="label">Mail</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/SimonHessel"
-                className="icon fa-github"
-              >
-                <span className="label">Github</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon fa-linkedin">
-                <span className="label">LinkedIn</span>
-              </a>
-            </li>
-          </ul>
-          <ul className="copyright">
-            <li>&copy; SH.</li>
-            <li>
-              Images: <a href="http://unsplash.com">Unsplash</a>.
-            </li>
-            <li>
-              Design: <a href="http://templated.co">TEMPLATED</a>.
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

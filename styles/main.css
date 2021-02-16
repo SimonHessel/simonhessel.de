@@ -3497,7 +3497,6 @@ button.alt:active,
   background-color: #1e2832;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: url("images/overlay.png"), url("../../images/pic11.jpg");
   background-size: cover;
 }
 
@@ -4028,8 +4027,11 @@ body.landing {
   object-fit: cover;
   pointer-events: none;
   background-color: #1e2832;
-  background-image: url("images/overlay.png");
   background-size: cover;
+}
+
+.background-image div {
+  z-index: -1;
 }
 
 #banner input,

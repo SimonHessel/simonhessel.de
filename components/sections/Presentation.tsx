@@ -4,11 +4,13 @@ import ActionRow from "../tiles/Button";
 import { Article } from "../../interfaces/Article";
 import { useTranslation } from "next-i18next";
 
-type Props = {};
+export type PresentationProps = {
+  articles: Article[];
+};
 
-const Presentation: React.FC<Props> = (_) => {
-  const { t } = useTranslation("common");
-  const articles: Article[] = t("articles", { returnObjects: true });
+const Presentation: React.FC<PresentationProps> = ({ articles }) => {
+  // const { t } = useTranslation("common");
+  // const articles: Article[] = t("articles", { returnObjects: true });
 
   return (
     <section id="one" className="wrapper style1">

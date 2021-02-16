@@ -1,23 +1,18 @@
 import React from "react";
-import { Article } from "../interfaces/Article";
-import { Skill } from "../interfaces/Skill";
 import Layout from "./Layout";
 import Banner from "./sections/Banner";
 import Contact from "./sections/Contact";
-import Presentation from "./sections/Presentation";
-import Skills from "./sections/Skills";
+import Presentation, { PresentationProps } from "./sections/Presentation";
+import Skills, { SkillsProps } from "./sections/Skills";
 
-export type MainProps = {
-  skills: Skill[];
-  articles: Article[];
-};
+export type MainProps = PresentationProps & SkillsProps;
 
-const Main: React.FC<MainProps> = (_) => {
+const Main: React.FC<MainProps> = ({ articles, skills }) => {
   return (
     <Layout title="Simon Hessel">
       <Banner />
-      <Presentation />
-      <Skills />
+      <Presentation articles={articles} />
+      <Skills skills={skills} />
       <Contact />
     </Layout>
   );
