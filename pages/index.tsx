@@ -1,23 +1,19 @@
+import admin from "firebase-admin";
+import fs from "fs";
 import { GetStaticProps, NextPage } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import firebase from "firebase";
-import "firebase/firestore";
 import React from "react";
 import Main, { MainProps } from "../components/Main";
-import fs from "fs";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_MESSEGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID,
-  };
-  const app = !firebase.apps.length
-    ? firebase.initializeApp(firebaseConfig)
-    : firebase.app();
+  const app = !admin.apps.length
+    ? admin.initializeApp({
+        credential: admin.credential.cert(
+          JSON.parse(process.env.FIREBASE_ADMIN_CONFIG)
+        ),
+      })
+    : admin.app();
+
   const db = app.firestore();
 
   const keys = [{ key: "articles", orderBy: "timestamp" }, { key: "skills" }];
