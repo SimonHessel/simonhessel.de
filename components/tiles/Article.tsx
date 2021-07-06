@@ -16,7 +16,7 @@ const ArticleSection = ({
   return (
     <article className={`feature ${site}`}>
       <span className="image">
-        <Image src={"/static/images/" + image} {...rest} />
+        <Image src={"/static/images/" + image} {...rest} layout="responsive" />
       </span>
       <div className="content">
         <h2>{title}</h2>
