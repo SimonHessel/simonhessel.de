@@ -33,8 +33,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
   const [articles, skills] = await Promise.all(res);
 
-  console.log(JSON.stringify(articles));
-
   return {
     props: {
       ...(await serverSideTranslations(
