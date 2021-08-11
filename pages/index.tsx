@@ -16,7 +16,11 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
   const db = app.firestore();
 
-  const keys = [{ key: "articles", orderBy: "timestamp" }, { key: "skills" }];
+  const keys = [
+    { key: "articles", orderBy: "timestamp" },
+    { key: "skills" },
+    { key: "banner" },
+  ];
   const res = keys.map(async ({ key, orderBy }) => {
     const collection = db.collection(key);
 
@@ -31,7 +35,9 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
     return data;
   });
 
-  const [articles, skills] = await Promise.all(res);
+  const [articles, skills, banner] = await Promise.all(res);
+
+  console.log(banner);
 
   return {
     props: {
@@ -43,6 +49,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       )),
       skills,
       articles,
+      cv: banner[0].cv,
     },
     revalidate: 1800,
   };

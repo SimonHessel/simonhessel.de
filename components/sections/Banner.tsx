@@ -2,9 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
-export type Props = {};
+export type BannerProps = {
+  cv: string;
+};
 
-const Banner = (props: Props) => {
+const Banner = ({ cv }: BannerProps) => {
   const { t } = useTranslation("hero");
 
   return (
@@ -27,7 +29,7 @@ const Banner = (props: Props) => {
             </a>
           </li>
           <li>
-            <Link href="https://drive.google.com/uc?export=download&id=1qax9mQQWEt_ugse6WEJBUaNKRHkJ_Neq">
+            <Link href={cv}>
               <a className="button big alt">{t("cvBtn")}</a>
             </Link>
           </li>
